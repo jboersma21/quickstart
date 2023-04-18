@@ -1,0 +1,16 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'junkyahd'
+theme = 'hugo-book'
+
+
+[params]
+
+    BookTheme = 'light'
+    BookToC = true
+    # BookLogo = ''
+    BookMenuBundle = '/menu'
+    BookSection = 'docs'
+    BookDateFormat = 'Jan 2, 2006'
+    BookSearch = true
+    BookComments = true
