@@ -1,7 +1,18 @@
-baseURL = 'http://example.org/'
+baseURL = 'www.chaoschampion.website'
 languageCode = 'en-us'
 title = 'junkyahd'
 theme = 'hugo-book'
+relativeURLs=true
+enableGitInfo = true
+
+
+
+
+# Needed for mermaid/katex shortcodes
+[markup]
+[markup.goldmark.renderer]
+  unsafe = true
+
 
 
 [params]
