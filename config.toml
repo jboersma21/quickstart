@@ -1,4 +1,4 @@
-baseURL = 'www.chaoschampion.website'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'junkyahd'
 theme = 'hugo-book'
