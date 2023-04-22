@@ -1,3 +1,6 @@
+{{ $data := newScratch }}
+{{ $data.Set "coin_select" "bitcoin" }}
+
 <form name="dropForm">
   <select name="dropSelect" onchange="getOption()">
     <option value="bitcoin" selected="selected">Bitcoin (BTC)</option>
@@ -23,6 +26,9 @@
 <script> 
   function getOption() {
     var strUser = document.getElementById("numberToSelect").value;
-    return strUser
+    {{ $data.Set "coin_select" strUser }}
   }
 </script>
+
+<script src="https://widgets.coingecko.com/coingecko-coin-converter-widget.js"></script>
+<coingecko-coin-converter-widget  coin-id={{ $data.Get "coin_select" }} currency="usd" background-color="#dbe4f0" font-color="#1e0368" locale="en"></coingecko-coin-converter-widget>
