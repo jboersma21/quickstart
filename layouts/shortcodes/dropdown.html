@@ -29,7 +29,7 @@
   }
 </script>
 
-{{ $data.Set "coin_select" getOption() }}
+{{ $data.Set "coin_select" "getOption()" }}
 
 <script src="https://widgets.coingecko.com/coingecko-coin-converter-widget.js"></script>
 <coingecko-coin-converter-widget  coin-id={{ $data.Get "coin_select" }} currency="usd" background-color="#dbe4f0" font-color="#1e0368" locale="en"></coingecko-coin-converter-widget>
