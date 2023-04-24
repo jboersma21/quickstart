@@ -1,6 +1,6 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'junkyahd'
+title = 'ChaosChampion'
 theme = 'hugo-book'
 relativeURLs=true
 enableGitInfo = true
@@ -13,7 +13,17 @@ enableGitInfo = true
 [markup.goldmark.renderer]
   unsafe = true
 
+[menu]
+# [[menu.before]]
+[[menu.after]]
+  name = "Github"
+  url = "https://github.com/alex-shpak/hugo-book"
+  weight = 10
 
+[[menu.after]]
+  name = "Hugo Themes"
+  url = "https://themes.gohugo.io/hugo-book/"
+  weight = 20
 
 [params]
 
