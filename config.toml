@@ -34,3 +34,8 @@ enableGitInfo = true
     BookDateFormat = 'Jan 2, 2006'
     BookSearch = true
     BookComments = true
+
+[security]
+  [security.exec]
+    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^babel$']
+    osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+)$']

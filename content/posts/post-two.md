@@ -1,6 +1,12 @@
 ---
-title: "Post Two"
-date: 2023-04-18T01:36:03-04:00
-# bookComments: false
-# bookSearchExclude: false
+title: "My React Post"
+...
+jsFiles:
+- "https://unpkg.com/react@18/umd/react.production.min.js"
+- "https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+- "https://unpkg.com/babel-standalone@6/babel.min.js"
 ---
+
+{{< raw-html >}}   
+<div id="root"></div>
+{{< /raw-html >}}
